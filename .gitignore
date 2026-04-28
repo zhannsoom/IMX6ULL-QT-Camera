@@ -1,0 +1,8 @@
+obj/
+*.o
+v4l2_test
+*.out
+*.elf
+*.bin
+*.exe
+.vscode/

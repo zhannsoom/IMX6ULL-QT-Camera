@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.h": "c",
+			"*.c": "c"
+		},
+		"C_Cpp.default.compilerPath": "arm-linux-gnueabihf-gcc",
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/**"
+		]
+	}
+}
