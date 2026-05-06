@@ -1,4 +1,4 @@
-# GDUT Qt Camera
+# IMX6ULL-QT-Camera
 
 这是 UI 相机的 Qt 版本。它保留 V4L2 摄像头采集能力，但把界面层从“手动写 framebuffer 像素”改成 Qt Widgets。
 
@@ -73,7 +73,7 @@ make
 生成程序：
 
 ```text
-gdut_qt_camera
+imx6ull_qt_camera
 ```
 
 如果是在开发板上本机编译，需要开发板文件系统已经安装 Qt Widgets 开发环境和 qmake。
@@ -83,31 +83,31 @@ gdut_qt_camera
 默认运行：
 
 ```sh
-./gdut_qt_camera
+./imx6ull_qt_camera
 ```
 
 指定摄像头：
 
 ```sh
-./gdut_qt_camera --device /dev/video1
+./imx6ull_qt_camera --device /dev/video1
 ```
 
 或者：
 
 ```sh
-CAM_DEV=/dev/video1 ./gdut_qt_camera
+CAM_DEV=/dev/video1 ./imx6ull_qt_camera
 ```
 
 窗口模式调试：
 
 ```sh
-./gdut_qt_camera --windowed --device /dev/video1
+./imx6ull_qt_camera --windowed --device /dev/video1
 ```
 
 指定分辨率：
 
 ```sh
-./gdut_qt_camera --device /dev/video1 --width 800 --height 480 --fps 30
+./imx6ull_qt_camera --device /dev/video1 --width 800 --height 480 --fps 30
 ```
 
 ## 输出文件
@@ -164,7 +164,7 @@ ls /dev/video*
 指定正确节点：
 
 ```sh
-./gdut_qt_camera --device /dev/video0
+./imx6ull_qt_camera --device /dev/video0
 ```
 
 ### 界面能打开但没有画面
@@ -191,7 +191,7 @@ imageformats/libqjpeg.so
 
 ```sh
 export QT_QPA_PLATFORM=linuxfb
-./gdut_qt_camera --device /dev/video1
+./imx6ull_qt_camera --device /dev/video1
 ```
 
 如果使用触摸屏，还需要根据开发板 Qt 环境配置触摸输入插件。

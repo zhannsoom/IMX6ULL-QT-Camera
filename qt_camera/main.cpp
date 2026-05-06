@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QCoreApplication::setApplicationName("GDUT Qt Camera");
+    QCoreApplication::setApplicationName("IMX6ULL-QT-Camera");
     QCoreApplication::setApplicationVersion("1.0.0");
 
     QCommandLineParser parser;

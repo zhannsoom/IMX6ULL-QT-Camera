@@ -423,7 +423,7 @@ cd ~/project/v4l2/v4l2_camera/qt_camera
 make distclean
 qmake qt_camera.pro
 make -j$(nproc)
-file gdut_qt_camera
+file imx6ull_qt_camera
 ```
 
 确认输出为 ARM 程序：
@@ -435,22 +435,22 @@ ELF 32-bit LSB executable, ARM
 拷贝到开发板：
 
 ```sh
-scp gdut_qt_camera root@开发板IP:/home/root/
+scp imx6ull_qt_camera root@开发板IP:/home/root/
 ```
 
 开发板运行：
 
 ```sh
 cd /home/root
-chmod +x gdut_qt_camera
+chmod +x imx6ull_qt_camera
 export QT_QPA_PLATFORM=linuxfb
-./gdut_qt_camera --device /dev/video1 --width 800 --height 480
+./imx6ull_qt_camera --device /dev/video1 --width 800 --height 480
 ```
 
 如果摄像头是 `/dev/video0`：
 
 ```sh
-./gdut_qt_camera --device /dev/video0 --width 800 --height 480
+./imx6ull_qt_camera --device /dev/video0 --width 800 --height 480
 ```
 
 ## 12. 验证方法
@@ -468,7 +468,7 @@ export QT_QPA_PLATFORM=linuxfb
 检查程序架构：
 
 ```sh
-file gdut_qt_camera
+file imx6ull_qt_camera
 ```
 
 检查 CPU 占用：
@@ -480,13 +480,13 @@ top
 如果 CPU 占用仍然很高，可以降低输入分辨率：
 
 ```sh
-./gdut_qt_camera --device /dev/video1 --width 640 --height 480
+./imx6ull_qt_camera --device /dev/video1 --width 640 --height 480
 ```
 
 或者降低摄像头帧率：
 
 ```sh
-./gdut_qt_camera --device /dev/video1 --width 800 --height 480 --fps 15
+./imx6ull_qt_camera --device /dev/video1 --width 800 --height 480 --fps 15
 ```
 
 ## 13. 后续可继续优化方向

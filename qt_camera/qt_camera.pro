@@ -4,7 +4,7 @@ CONFIG += c++11
 CONFIG -= app_bundle
 
 TEMPLATE = app
-TARGET = gdut_qt_camera
+TARGET = imx6ull_qt_camera
 
 DEFINES += QT_DEPRECATED_WARNINGS
 

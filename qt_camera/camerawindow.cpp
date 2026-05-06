@@ -111,7 +111,7 @@ CameraWindow::CameraWindow(const QString &device, int width, int height, int fps
       m_requestHeight(height),
       m_requestFps(fps)
 {
-    setWindowTitle(QStringLiteral("GDUT Qt Camera"));
+    setWindowTitle(QStringLiteral("IMX6ULL-QT-Camera"));
     setMinimumSize(640, 360);
     qRegisterMetaType<QImage>("QImage");
 
@@ -186,7 +186,7 @@ void CameraWindow::buildSplashPage()
                                         Qt::SmoothTransformation));
     layout->addWidget(m_splashLogo, 0, Qt::AlignCenter);
 
-    QLabel *title = new QLabel(QStringLiteral("GDUT CAMERA"));
+    QLabel *title = new QLabel(QStringLiteral("IMX6ULL QT CAMERA"));
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet("color: #d20a24; font-size: 28px; font-weight: 800; letter-spacing: 2px;");
     layout->addSpacing(28);
@@ -221,7 +221,7 @@ void CameraWindow::buildCameraPage()
 
     m_recordLabel = new QLabel(QStringLiteral("READY"));
     m_recordLabel->setStyleSheet("color: #b8c0cc; font-size: 15px; font-weight: 700;");
-    m_titleLabel = new QLabel(QStringLiteral("GDUT Camera"));
+    m_titleLabel = new QLabel(QStringLiteral("IMX6ULL Camera"));
     m_titleLabel->setAlignment(Qt::AlignCenter);
     m_titleLabel->setStyleSheet("color: white; font-size: 20px; font-weight: 800;");
     m_deviceLabel = new QLabel(m_device);

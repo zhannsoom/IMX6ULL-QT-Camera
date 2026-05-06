@@ -23,4 +23,6 @@ qt_camera/ui_*.h
 qt_camera/*.o
 qt_camera/gdut_qt_camera
 qt_camera/gdut_qt_camera.exe
+qt_camera/imx6ull_qt_camera
+qt_camera/imx6ull_qt_camera.exe
 resume_work/

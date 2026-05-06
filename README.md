@@ -1,4 +1,4 @@
-# V4L2 UI Camera
+# IMX6ULL-QT-Camera
 
 这是一个基于 Linux framebuffer、V4L2 和 input event 的嵌入式 UI 相机项目，面向 I.MX6U/ARM Linux 开发板场景。项目实现了摄像头实时预览、触摸 UI、拍照、录像和相册浏览功能。
 
