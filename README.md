@@ -30,7 +30,7 @@
 ├── photo/                  BMP 拍照保存
 ├── video/                  RGB565 原始帧录像
 ├── album/                  BMP 相册浏览
-└── docs/                   学习教程和项目文档
+└── docs/                   项目文档
 ```
 
 ## 编译
@@ -69,13 +69,6 @@ CAM_DEV=/dev/video0 TOUCH_DEV=/dev/input/event1 ./v4l2_test
 photo/    保存 BMP 照片
 video/    保存 .r565 录像文件
 ```
-
-## 学习文档
-
-完整工程学习教程见：
-
-- [UI 相机工程学习教程 Markdown](docs/ui_camera_learning_tutorial.md)
-- [Qt 相机流畅性优化实验报告](docs/qt_camera_optimization_report.md)
 
 ## Qt 版本
 
