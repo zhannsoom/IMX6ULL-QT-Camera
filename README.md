@@ -75,7 +75,17 @@ video/    保存 .r565 录像文件
 完整工程学习教程见：
 
 - [UI 相机工程学习教程 Markdown](docs/ui_camera_learning_tutorial.md)
-- [UI 相机工程学习教程 PDF](docs/ui_camera_learning_tutorial.pdf)
+- [Qt 相机流畅性优化实验报告](docs/qt_camera_optimization_report.md)
+
+## Qt 版本
+
+新增 Qt Widgets 版本位于：
+
+- [qt_camera/](qt_camera/)
+
+Qt 版本使用独立预览控件和独立 UI 覆盖层，解决 framebuffer 手动画 UI 时底部功能栏被摄像头帧覆盖导致的闪屏问题，并增加广东工业大学 Logo 开机页。编译运行说明见：
+
+- [Qt 相机说明](qt_camera/README_QT_CAMERA.md)
 
 ## 版本
 
